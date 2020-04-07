@@ -1,8 +1,13 @@
-function convertToF(celsius) {
+function convertToF(celcius) {
     // code below this
+    if(typeof celcius === "string" ){
+      return "Only accept value types of Number";
+      
+    }
     let fahrenheit;
-    fahrenheit = (celsius * (9/5)) + 32;
-    return fahrenheit;
+    fahrenheit = (celcius * (9/5)) + 32;
+    pembulatan = Math.floor(fahrenheit)
+    return pembulatan;
     // code above this
   }
   
